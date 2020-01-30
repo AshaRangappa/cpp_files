@@ -2,7 +2,9 @@
 using namespace std; 
  class A {  
  public: 
-    A(int ii = 0) : i(ii) {} 
+    A(int ii=0) : i(ii) {
+cout << " AAAAAAAAAAAAAAAAA i = " << i << endl;
+	} 
     void show() { cout << "i = " << i << endl;} 
  private: 
     int i; 
@@ -15,7 +17,9 @@ using namespace std;
     int x; 
 }; 
  void g(A a) 
-{  a.show(); } 
+{
+cout <<"am in g" <<endl;  
+a.show(); } 
  
 int main() { 
   B b(10); 
